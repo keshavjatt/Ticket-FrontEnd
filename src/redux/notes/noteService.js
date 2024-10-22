@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = "/api/tickets/view-tickets/";
+// Get the base URL from the environment variable
+const API_URL = `${process.env.REACT_APP_API_BASE_URL}/api/tickets/view-tickets/`;
 
 // Get ticket notes
 const getNotes = async (ticketId, token) => {
