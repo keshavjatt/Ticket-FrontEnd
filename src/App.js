@@ -22,7 +22,7 @@ function App() {
           <Route path="/new-ticket" element={<ProtectedRoutes />}>
             <Route path="/new-ticket" element={<CreateTicket />}></Route>
           </Route>
-          <Rou              te path="/tickets" element={<ProtectedRoutes />}>
+          <Route path="/tickets" element={<ProtectedRoutes />}>
             <Route path="/tickets" element={<ViewTickets />}></Route>
           </Route>
           <Route path="/ticket/:ticketId" element={<ProtectedRoutes />}>
